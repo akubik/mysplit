@@ -25,12 +25,6 @@ describe('mySplit tests', () => {
         expect(mySplit(text, delimiter)).toEqual(["Tek", "t"]);
     });
 
-    it('should split text when delimiter is one letter from inside', () => {
-        const text = "Tekst";
-        const delimiter = "s";
-        expect(mySplit(text, delimiter)).toEqual(["Tek", "t"]);
-    });
-
     it('should put delimiter as a first element of the result array when delimiter is first character in the string', () => {
         const text = " Tekst jest super";
         const delimiter = " ";
